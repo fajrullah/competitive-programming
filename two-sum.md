@@ -19,9 +19,12 @@ Output: [0,1]
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
+    // store index
     const indices = {};
     for(let i = 0; i < nums.length; i++){
+        // get the difference
         const difference = target - nums[i];
+        // if the difference on there the return the index of array
         if(difference in indices){
             return [indices[difference], i]
         }
