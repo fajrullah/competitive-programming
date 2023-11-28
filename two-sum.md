@@ -23,7 +23,6 @@ var twoSum = function(nums, target) {
     for(let i = 0; i < nums.length; i++){
         const difference = target - nums[i];
         if(difference in indices){
-            console.log("difference", difference)
             return [indices[difference], i]
         }
         indices[nums[i]] = i
